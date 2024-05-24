@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.io Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #chat {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+      height: 400px;
+      overflow-y: scroll;
+      margin-bottom: 10px;
+    }
+    #message {
+      width: 80%;
+      padding: 10px;
+    }
+    #sendBtn {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat"></div>
+  <input type="text" id="message" placeholder="Enter message">
+  <button id="sendBtn">Send</button>
+
+  <!-- Include Socket.io client -->
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+  <!-- Include custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
